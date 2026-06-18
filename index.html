@@ -1,0 +1,184 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voice of Lourdes</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#f8fbff,#edf5ff);
+    padding:15px;
+}
+
+.container{
+    width:100%;
+    max-width:430px;
+    background:#ffffff;
+    border:1px solid #dbe8ff;
+    border-radius:24px;
+    padding:30px 25px;
+    text-align:center;
+    box-shadow:0 10px 35px rgba(10,77,163,0.08);
+}
+
+.logo{
+    width:240px;
+    max-width:100%;
+    margin-bottom:15px;
+}
+
+.divider{
+    width:60px;
+    height:3px;
+    background:#0A4DA3;
+    margin:15px auto 20px;
+    border-radius:20px;
+}
+
+.parish-name{
+    color:#0A4DA3;
+    font-size:14px;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.social-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+
+    width:100%;
+    padding:15px;
+
+    margin-bottom:12px;
+
+    text-decoration:none;
+
+    background:#0A4DA3;
+    color:white;
+
+    border-radius:14px;
+
+    font-size:16px;
+    font-weight:500;
+
+    transition:all 0.3s ease;
+}
+
+.social-btn:hover{
+    background:#083b7d;
+    transform:translateY(-2px);
+}
+
+.social-btn img{
+    width:24px;
+    height:24px;
+    filter:brightness(0) invert(1);
+}
+
+.footer{
+    margin-top:20px;
+    color:#6c757d;
+    font-size:12px;
+    line-height:1.7;
+}
+
+@media(max-width:480px){
+
+    .container{
+        padding:25px 20px;
+    }
+
+    .logo{
+        width:200px;
+    }
+
+    .parish-name{
+        font-size:13px;
+    }
+
+    .social-btn{
+        padding:13px;
+        font-size:15px;
+    }
+}
+
+@media(max-height:700px){
+
+    .logo{
+        width:180px;
+    }
+
+    .parish-name{
+        margin-bottom:18px;
+        font-size:13px;
+    }
+
+    .social-btn{
+        padding:12px;
+    }
+
+    .footer{
+        margin-top:15px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Replace with your uploaded logo -->
+    <img src="{% static 'images/Voice of Lourdes Logo.png' %}" alt="Voice of Lourdes" class="logo">
+
+    <div class="divider"></div>
+
+    <div class="parish-name">
+        <strong>Our Lady of Lourdes Metropolitan Cathedral</strong><br>
+        Thrissur<br>
+        Voice of Lourdes – Media Cell
+    </div>
+
+    <a href="https://wa.me/918547797595" target="_blank" class="social-btn">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+        WhatsApp
+    </a>
+
+    <a href="https://youtube.com/@voiceoflourdes?si=ih7aV1-K0uGYNUbx" target="_blank" class="social-btn">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube">
+        YouTube
+    </a>
+
+    <a href="https://www.instagram.com/lourdes_metropolitan_cathedral?igsh=MXNoZHgwZ2kzNnlzcw==" target="_blank" class="social-btn">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+        Instagram
+    </a>
+
+    <div class="footer">
+        Voice of Lourdes © 2026<br>
+        Lourdes Cathedral Media Cell
+    </div>
+
+</div>
+
+</body>
+</html>
